@@ -1,0 +1,1 @@
+This is a list of bicep templates for setting up infrastructure 
