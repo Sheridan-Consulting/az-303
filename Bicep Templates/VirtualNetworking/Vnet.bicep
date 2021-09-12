@@ -1,17 +1,21 @@
+param addressPrefix string
+param subnet string
+
+
 resource vnetWestUs2 'Microsoft.Network/virtualNetworks@2021-02-01' = {
-  name: 'vnetWest'
+  name: 'vnetEast'
   location: resourceGroup().location
   properties:{
     addressSpace:{
       addressPrefixes: [
-        '10.1.0.0/16'
+        addressPrefix
       ]
     }
     subnets: [
       {
         name: 'subnet1'
         properties:{
-          addressPrefix: '10.1.1.0/24'
+          addressPrefix: subnet
         }
       }
     ]
