@@ -8,8 +8,8 @@
 ## Commands
 
 ### Deploy Bicep Templates
-    az deployment sub create --location eastus --template-file Setup.bicep
+    az deployment sub create --location westus --template-file Setup.bicep
 
 ### Cleanup
-    az group delete --name WestRG
-    az group delete --name EastRG
+    az group delete --name AZ303-VPCPeering
+    
